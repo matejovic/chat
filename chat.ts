@@ -5,7 +5,8 @@ const openai = new OpenAI();
 async function queryBot(prompt) {
   return  await openai.chat.completions.create({
     messages: [{ role: "system", content: prompt}],
-    model: "gpt-3.5-turbo",
+    model: "gpt-4",
+    // model: "gpt-3.5-turbo",
   });
 }
 
